@@ -1,0 +1,63 @@
+<!-- Anjana Chowdary Maganti -->
+<!-- G01447283 -->
+<!-- This code displays a form for a student survey when clicked on 'click to go to the student survey form' in the homepage. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h2>Student Survey Form</h2>
+    <form>
+
+        <label>First Name: <input type="text" name="firstName" required></label><br>
+        <label>Last Name: <input type="text" name="lastName" required></label><br>
+        <label>Street Address: <input type="text" name="streetAddress" required></label><br>
+        <label>City: <input type="text" name="city" required></label><br>
+        <label>State: <input type="text" name="state" required></label><br>
+        <label>Zip: <input type="text" name="zip" required></label><br>
+        <label>Telephone Number: <input type="tel" name="telephone" required></label><br>
+        <label>E-mail: <input type="email" name="email" required></label><br>
+        <label>Date of Survey: <input type="date" name="dateOfSurvey" required></label><br>
+
+        <fieldset>
+            <legend>What did you like most about the campus?</legend>
+            <label><input type="checkbox" name="likes" value="students">Students</label><br>
+            <label><input type="checkbox" name="likes" value="location">Location</label><br>
+            <label><input type="checkbox" name="likes" value="campus">Campus</label><br>
+            <label><input type="checkbox" name="likes" value="atmosphere">Atmosphere</label><br>
+            <label><input type="checkbox" name="likes" value="dormRooms">Dorm Rooms</label><br>
+            <label><input type="checkbox" name="likes" value="sports">Sports</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>How did you become interested in our university?</legend>
+	    <!-- Radio buttons for selection -->
+            <label><input type="radio" name="interestSource" value="friends" required>Friends</label><br>
+            <label><input type="radio" name="interestSource" value="television">Television</label><br>
+            <label><input type="radio" name="interestSource" value="internet">Internet</label><br>
+            <label><input type="radio" name="interestSource" value="other">Other</label><br>
+        </fieldset>
+
+	<!-- Dropdown for selecting the likelihood of recommendation -->
+        <label>Recommendation Likelihood: 
+            <select name="likelihood" required>
+                <option value="veryLikely">Very Likely</option>
+                <option value="likely">Likely</option>
+                <option value="unlikely">Unlikely</option>
+            </select>
+        </label><br>
+
+        <label>Raffle: <input type="text" name="raffle" placeholder="Enter 10 numbers (1-100)" required></label><br>
+
+        <!-- Additional Comments -->
+        <label>Additional Comments:<br>
+            <textarea name="additionalComments" rows="4"></textarea>
+        </label><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
